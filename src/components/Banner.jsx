@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Banner.css';
+import { Button } from '@material-ui/core';
 
 function Banner() {
     return (
@@ -11,6 +12,10 @@ function Banner() {
                     consectetur adipisicing 
                     elit. Officia, 
                 </h5>
+                <Button 
+                variant="outlined">
+                    Tour Ports 
+                </Button>
             </div>
         </div>
     )
