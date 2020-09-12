@@ -1,7 +1,8 @@
 import React,{ useState }from 'react';
+import DatePicker from '../components/DatePicker';
 import '../css/Banner.css';
 import { Button } from '@material-ui/core';
-import { Search } from '@material-ui/icons';
+
 
 function Banner() {
     // provide functionality with search date button
@@ -10,13 +11,14 @@ function Banner() {
     return (
         <div className="banner">
             <div className="banner__search">
-                {showSearch && <Search/>}
+                {showSearch && <DatePicker/>}
                 {/* if btn is click it will show selector or not */}
                 <Button onClick={()=>setShowSearch(!showSearch)}
                 className="banner__searchButton"
                 variant="outlined">
                     Search Dates
                 </Button>
+             
             </div>
             <div className="banner__info">
                 <h1>Journey to your Destination</h1>

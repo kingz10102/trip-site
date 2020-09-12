@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { DateRangePicker } from "react-date-range";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import PeopleIcon from '@material-ui/icons/People';
+import { Button } from '@material-ui/core';
 import '../css/DatePicker.css'
 
 function DatePicker() {
@@ -18,13 +20,24 @@ function DatePicker() {
     function handleSelect(ranges) {
         setStartDate(ranges.selection.startDate);
         setEndDate(ranges.selection.endDate);
-        
+
     }
 
 
     return (
         <div className="datePicker">
-            
+            <DateRangePicker 
+            ranges={[selectionRange]}
+            onChange={handleSelect}/> 
+            <h2>
+                Number of Passengers
+                <PeopleIcon/>
+            </h2>
+            <input 
+            min={0}
+            defaultValue={2}
+            type="number"/>
+            <Button>Search Maravalous Cruises</Button>
         </div>
     )
 }

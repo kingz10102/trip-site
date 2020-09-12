@@ -1,0 +1,9 @@
+.datePicker {
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    width: 100vw;
+}
+.datePicker > h2 {
+ 
+}
