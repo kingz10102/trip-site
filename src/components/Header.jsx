@@ -1,5 +1,4 @@
 import React from 'react';
-import logopic from '../assets/sitelogo.png';
 import SearchIcon from '@material-ui/icons/Search';
 
 import '../css/Header.css';
@@ -9,7 +8,7 @@ function Header() {
         <div className="header">
             <img 
             className="header__icon"
-            src={logopic}
+            src="https://icon-library.net/images/vacation-icon-png/vacation-icon-png-7.jpg"
             alt=""/>
 
 
