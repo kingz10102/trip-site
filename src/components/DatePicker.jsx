@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css'; // theme css file
-import PeopleIcon from '@material-ui/icons/People';
-import { Button } from '@material-ui/core';
+import { Button } from "@material-ui/core";
+import PeopleIcon from "@material-ui/icons/People";
 import '../css/DatePicker.css'
 
 function DatePicker() {
@@ -25,18 +25,17 @@ function DatePicker() {
 
 
     return (
-        <div className="datePicker">
+        <div className="datepicker">
             <DateRangePicker 
             ranges={[selectionRange]}
             onChange={handleSelect}/> 
             <h2>
-                Number of Passengers
-                <PeopleIcon/>
-            </h2>
-            <input 
+                Number of Passengers<PeopleIcon/>
+                <input 
             min={0}
             defaultValue={2}
             type="number"/>
+            </h2>
             <Button>Search Maravalous Cruises</Button>
         </div>
     )
