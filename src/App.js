@@ -1,6 +1,8 @@
 import React from 'react';
 import Home from './components/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import './App.css';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
         <Header/>
       {/* Home */}
       <Home/>
+      {/*  */}
+      <Footer />
     </div>
   );
 }

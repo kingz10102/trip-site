@@ -1,0 +1,11 @@
+.footer {
+    border-top: 3px solid rgb(148, 226, 159);
+    padding: 21px;
+    background-color: #ebe9e9;
+    text-align: center;
+}
+
+.footer > p {
+    padding: 5px;
+    font-size: 14px;
+}
