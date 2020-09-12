@@ -42,7 +42,7 @@
     width: 579px;
 }
 
-.datepicker> button:hover {
+.datepicker > button:hover {
     background-color: white;
     color: #C1F257;
 }

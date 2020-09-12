@@ -7,6 +7,17 @@ function Home() {
         <div className="home">
           {/* Banner */}
           <Banner/>
+
+          <div className="home__division">
+              <Card/>
+              <Card/>
+              <Card/>
+          </div>
+          <div className="home__division">
+              <Card/>
+              <Card/>
+              <Card/>
+          </div>
         </div>
     )
 }
