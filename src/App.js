@@ -25,7 +25,7 @@ function App() {
       {/* Home Page */}
         <Home/>
      </Route>
-        </Switch>
+      </Switch>
       {/* Footer */}
       <Footer />
       </Router>
