@@ -2,11 +2,13 @@ import React,{ useState }from 'react';
 import DatePicker from '../components/DatePicker';
 import '../css/Banner.css';
 import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 
 function Banner() {
     // provide functionality with search date button
     const [showSearch, setShowSearch] = useState(false);
+    const history = useHistory();
     
     return (
         <div className="banner">
@@ -28,8 +30,9 @@ function Banner() {
                     elit. Officia, 
                 </h5>
                 <Button 
+                onClick={() => history.push('/search')}
                 variant="outlined">
-                    Tour Ports 
+                    Explore your adventure 
                 </Button>
             </div>
         </div>

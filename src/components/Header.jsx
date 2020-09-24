@@ -9,12 +9,9 @@ import '../css/Header.css';
 function Header() {
     return (
         <div className="header">
-           <Link to="/">
-            <img 
-            className="header__icon"
-            src="https://icon-library.net/images/vacation-icon-png/vacation-icon-png-7.jpg"
-            alt=""/>
-            </Link>
+         
+            <Link to="/" className="header__title"> REMARKABLE VACATIONS</Link>
+         
 
 
             <div className="header__center">
